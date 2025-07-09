@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace pooPerguntaEResposta
 {
+    /// <summary>
 	public class Pergunta
 	{
 		public Pergunta()
@@ -16,12 +17,12 @@ namespace pooPerguntaEResposta
 
         public Pergunta(string texto, string resposta )
         {
-            this.Texto = "";
-            this.Resposta = "";
+            this.Texto = texto;
+            this.Resposta = resposta;
         }
 
 
-        private string Texto { get; set; }
+        public string Texto { get; set; }
 
         public string Resposta { get; set; }
 
